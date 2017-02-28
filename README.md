@@ -1,4 +1,1 @@
 # JavaDesignPattern
-
-Adapter pattern
-   
