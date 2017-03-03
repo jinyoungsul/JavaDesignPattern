@@ -5,6 +5,8 @@ import adapter.AdapterImpl;
 import strategy.Character;
 import strategy.Knife;
 import strategy.Sword;
+import templateMethod.AbstGameConnectHelper;
+import templateMethod.DefaultGameConnectHelper;
 
 public class Main {
 
@@ -33,11 +35,24 @@ public class Main {
 		// 구현 객체 이름은 Adapter
 		// Math 클래스에서 두 배와 절반을 구하는 함수는 이미 구현
 		
-		Adapter adapter = new AdapterImpl();
-		System.out.println(adapter.halfOf(100f));
-		System.out.println(adapter.twiceOf(100f));
+//		Adapter adapter = new AdapterImpl();
+//		System.out.println(adapter.halfOf(100f));
+//		System.out.println(adapter.twiceOf(100f));
 		
 		//////////////////
+		
+		
+		//template method pattern//
+				// 요구사항
+				// 
+				// 
+				// 
+				//
+				// 
+				AbstGameConnectHelper helper = new DefaultGameConnectHelper();
+				helper.requestConnection("아이디 암호 등 접속 정보");
+				
+				//////////////////
 	}
 
 }
